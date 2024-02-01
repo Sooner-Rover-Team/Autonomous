@@ -101,6 +101,10 @@ def drive(rover):
     f.close()
 
 
+    f = open("Recorded_Coordinates_"+ args.latLong + ".txt", "a")
+    f.write("Latitude: " + rover.gps.latitude + "\n  Longitude: " + rover.gps.longitude)
+    f.close()
+
 if __name__ == "__main__":
     os.chdir(path)
     print(os.getcwd())
