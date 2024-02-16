@@ -1,9 +1,5 @@
 # Autonomous Code
 
-## IMPORTANT
-
-Almost all of this documentation below is no longer relevant.
-
 ## Installation
 
 Follow [this link](https://docs.ros.org/en/iron/Installation/Ubuntu-Install-Debians.html) to set up ROS 2 (Iron) locally.
@@ -28,6 +24,13 @@ Then run this command to be able to run the correct packages:
 source install/setup.bash
 ```
 
+## Running
+
+Run one of the launch files `launch/rover_launch.py` (NOT FINISHED) or `launch/rover_sim_launch.py` with the following command:
+
+```bash
+ros2 launch launch/<launch file>
+```
 
 ### Documentation
 
