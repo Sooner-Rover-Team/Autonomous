@@ -1,0 +1,8 @@
+bool search_for_object
+uint32 aruco_id
+rats_interfaces/GPSPoint[] path
+---
+bool destination_reached
+---
+float32 percent_traveled
+bool found_object

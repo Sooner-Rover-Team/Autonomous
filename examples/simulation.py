@@ -10,10 +10,10 @@ import numpy as np
 import pygame
 from pygame.locals import *
 
-from examples.renderer import MarkerObject, Renderer
-from libs.Camera import Camera, MockedCamera, get_cameras_from_file
-from libs.Rover import MockedRover
-from libs.utilities import degrees_to_meters, meters_to_degrees, parse_config_file
+from renderer import MarkerObject, Renderer
+from ..libs.Camera import Camera, MockedCamera, get_cameras_from_file
+from ..libs.Rover import MockedRover
+from ..libs.utilities import degrees_to_meters, meters_to_degrees, parse_config_file
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -61,8 +61,8 @@ def main():
     # stop_timer.start()
 
     viewer = Viewer(sim)
-    while True:
-        pass
+    # while True:
+        # pass
         # sim.step(1/SIMULATION_FREQ)
         # sleep(1/SIMULATION_FREQ)
     

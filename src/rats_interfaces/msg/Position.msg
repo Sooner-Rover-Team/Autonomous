@@ -1,0 +1,3 @@
+std_msgs/Header header
+rats_interfaces/GPSPoint position
+float64 bearing

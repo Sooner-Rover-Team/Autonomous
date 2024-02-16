@@ -20,14 +20,14 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 ARUCO_DICT = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
 ARUCO_SIZE = 0.10 # 200mm
 
-CAMERA_INDEX = 4
-WIDTH = 1920
-HEIGHT = 1080
+CAMERA_INDEX = '/dev/video0'
+WIDTH = 1280
+HEIGHT = 720
 CAMERA_NAME = 'papalook'
 
 def main():
-    intrinsic = np.load(f'../tools/{CAMERA_NAME}_{WIDTH}_{HEIGHT}_intrinsic.npy')
-    distortion = np.load(f'../tools/{CAMERA_NAME}_{WIDTH}_{HEIGHT}_distortion.npy')
+    intrinsic = np.load(f'../cfg/{CAMERA_NAME}_{WIDTH}_{HEIGHT}_intrinsic.npy')
+    distortion = np.load(f'../cfg/{CAMERA_NAME}_{WIDTH}_{HEIGHT}_distortion.npy')
     camera = Camera(CAMERA_INDEX, WIDTH, HEIGHT, 30, 'MJPG')
     camera.start()
     # artracker = ARTracker()

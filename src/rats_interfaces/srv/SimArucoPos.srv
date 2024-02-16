@@ -1,0 +1,4 @@
+---
+float64[] latitudes
+float64[] longitudes
+float64[] ids

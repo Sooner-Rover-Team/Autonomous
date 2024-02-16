@@ -90,8 +90,8 @@ def main():
                     help='Minimum clarity to accept image (100-400 or so)')
     ap.add_argument('-v', '--visualize', action='store_true',
                     help='Visualize images as they are processed')
-    ap.add_argument('-c', '--camera', type=int,
-                    default=0, help='Camera ID to use')
+    ap.add_argument('-c', '--camera', type=str,
+                    default='/dev/video0', help='Camera device to use')
     ap.add_argument('-n', '--name', type=str, default='',
                     help='Name of camera for file saving')
     args = vars(ap.parse_args())
