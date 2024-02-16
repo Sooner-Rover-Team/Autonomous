@@ -1,6 +1,6 @@
 __pycache__
 autonomous.egg-info
 build
-logs
+log
 install
 *.npy
